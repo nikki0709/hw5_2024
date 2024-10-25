@@ -1,0 +1,70 @@
+/* 1. Animate the logo with keyframes */
+@keyframes logoAnimation {
+    from {
+      width: 25px;
+      opacity: 0;
+    }
+    to {
+      width: 475px;
+      opacity: 1;
+    }
+  }
+
+/* 2. Edit the body element to use the Poppins font with serif as a backup */
+body{
+    font-family: 'Poppins', serif;
+}
+
+
+/* 7. Edit the css for the card class */
+.card{
+    flex-basis: 450px;
+}
+
+/* 8. Edit the css for the pricing class */
+.pricing{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+/* 9. tyle the images in the gallery class */
+.gallery img{
+    border: 10px solid #50C7C7;
+    margin: 10px 10px 10px 10px;
+    width: 300px;
+}
+
+/* 10. Edit the css for the gallery class to use flex */
+
+
+@media screen and (min-width:900px) {
+/* 11. Edit the css for the header tag (all instances) and the nav_links class */
+    header{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+    }
+
+    .nav_links{
+        flex-direction: row;
+    }
+
+/* 12. Edit the css for the pricing and card classes to match our example */
+    .card{
+        flex-basis: 275px;
+    }
+    .pricing{
+        align-items: center;
+    }
+
+/* 13. Modify the first header (the one not inside main) so that it remains visible at the top of the screen even as we scroll down. */
+}
+
+@media all and (prefers-reduced-motion:reduce){
+
+}
+
+@media print{
+
+}
